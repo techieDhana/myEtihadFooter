@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    scrollbar-width: auto;
+    scrollbar-color: #4e4c4a, #fff;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #f6f6f5;
+}
+
+.footer {
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.footer .ft {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    color: #4e4c4a;
+    border-top: 1px solid #dcdbdb;
+    margin-bottom: 20px;
+}
+
+.footer-content h4 {
+    color: #212121;
+    margin: 18px 0;
+    /* font-size: 18px; */
+    font-weight: 700;
+
+}
+
+.footer-content li {
+    margin-bottom: 10px;
+}
+
+.footer-content a:hover {
+    border-bottom: 1px solid hsl(0, 0%, 13%);
+    transition: .6s all ease;
+    cursor: pointer;
+}
+
+.footer-content a {
+    font-size: 14px;
+    color: #212121;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.footer-content p,
+.copyright p {
+    font-size: 14px;
+    color: #4e4c4a;
+}
+
+.footer-content img {
+    height: 10px;
+}
+
+button {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 11px 20px;
+    color: #212121;
+    border: 1px solid #212121;
+    box-shadow: 0 0 4px rgba(33, 33, 33, .25);
+    border-radius: 10px;
+    background-color: #fff;
+    letter-spacing: 0.2px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #212121;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.copyright {
+    padding: 30px 95px;
+    border-top: 1px solid #dcdbdb;
+}
+
+.copyright div {
+    display: inline-block;
+}
+
+.copyright a {
+    color: #4e4c4a;
+    font-size: 14px;
+    line-height: 5px;
+}
+
+
+.copyright p a:hover {
+    border-bottom: 1px solid #212121;
+    transition: .6s all ease;
+    cursor: pointer;
+}
+
+.icons {
+    float: right;
+}
+
+.icons a {
+    border-radius: 50px;
+    font-size: 15px;
+    padding:5px;
+    background-color: #212121;
+
+    color: #f6f6f5;
+    margin: 0 5px;
+    transition: transform .2s;
+}
+
+.icons a:hover {
+    transform: scale(1.1);
+}
+@media (max-width:1600px) {
+    .footer .ft,.copyright{
+        padding: 20px;
+    }
+}
+
+
+@media (max-width:1000px) {
+    .footer {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: auto;
+    }
+    .footer .ft{
+        display: flex;
+        
+    } 
+    .copyright div {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .copyright .icons {
+        float: none;
+    }
+}
+
+@media (max-width:800px) {
+    .footer {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: auto;
+    }
+
+
+}
